@@ -3,4 +3,4 @@ Repositorio de la práctica 3 de Sistemas Operativos II, la cual consiste en có
 
 ## Paso 1 ¿Cómo hacer un respaldo de una máquina virtual? y ¿cómo levantar ese respaldo?
 
-![Imagen1](/CAPTURE.PNG)
+![Imagen1](CAPTURE.PNG)
