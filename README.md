@@ -179,4 +179,4 @@ Este archivo debe de contener las primeras tres línesa de esta forma:
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-![Imagen1](Captura3.PNG)
+![Imagen1](Capture3.PNG)
