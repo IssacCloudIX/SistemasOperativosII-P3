@@ -52,7 +52,7 @@ Capturas de la instalación de los paquetes:
 
 ![Imagen1](7.png)
 
-## Paso 4. ¿Cómo descargar una versión de kernel desde terminal?
+## Paso 4 ¿Cómo descargar una versión de kernel desde terminal?
 
 Para realizar este paso se utiliza el comando wget, y se le pasa el link de descarga de la versión de kernal deseada:
 
@@ -70,7 +70,7 @@ Captura de la descarga finalizada:
 
 ![Imagen1](4.png)
 
-## Paso 5. ¿Cómo extraer el código comprimido del kernel desde terminal?
+## Paso 5 ¿Cómo extraer el código comprimido del kernel desde terminal?
 
 Para descomprimir el código se utiliza el comando tar, el cual nos ayuda a comprimir y descomprimir archivos en linux:
 ```
@@ -78,3 +78,27 @@ tar xvf linux-5.17.5.tar.xz
 ```
 Captura en terminal del comando: 
 ![Imagen1](5.png)
+
+## Paso 6 ¿Cómo configurar el kernel?
+
+Primero hay que moverse a la carpeta descomprimida del kernel:
+
+```
+cd linux-5.17.5
+```
+
+![Imagen1](8.png)
+
+Después es necesario realizar una copia del archivo de configuración del kernel instalado actualmente para modificarlo con la nueva versión.
+```
+cp -v /boot/config-$(uname -r) .config
+```
+![Imagen1](9.png)
+
+Por último, se realiza el make de menuconfig.
+
+```
+make menuconfig
+```
+
+![Imagen1](10.png)
