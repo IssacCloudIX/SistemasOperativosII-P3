@@ -180,3 +180,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 ![Imagen1](Capture3.PNG)
+
+Una vez realizado estos dos pasos, se debe reiniciar Ubuntu y apretar la tecla shift mientras se inicia. Esto desplegará el menú GRUB a través del cual podremos seleccionar el kernel deseado para iniciar:
+
+![Imagen1](Final.png)
