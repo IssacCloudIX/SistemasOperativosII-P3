@@ -178,6 +178,8 @@ Captura de la instalación en progreso:
 
 Al finalizar la instalación no se mostrará ningún mensaje, solo se dejará de actualizar la consola.
 
+Una vez finalizada la instalación, se debe reiniciar Ubuntu y el kernel ya estará actualizado.
+
 ## Paso 10 ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
 
 Para indicarle a Ubuntu que kernel cargar al inicio, se debe de entrar al menu GRUB, el cual nos permite elegir cual sistema operativo cargar.
