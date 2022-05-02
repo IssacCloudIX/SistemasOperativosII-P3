@@ -10,3 +10,14 @@ Antes de compilar el kernel, se realizará un respaldo en caso de que surja algu
 Captura del respaldo corriendo: 
 
 ![Imagen1](Capture2.PNG)
+
+## Explicar la nomenclatura del kernel.
+
+2.La nomenclatura moderna para la versión del kernal de Linux consiste en:
+major#.minor#[.patchlevel][-ExtraVersion]
+donde patchlevel y extraversion son números opcionales.
+
+El major number es el número principal de la versión.
+El minor number es el número jerárquicamente debajo del número principal, el cual representa cambios hechos a la versión principal actual. 
+El patchlevel, también llamado ABI o revisión, es aplicado a una versión estable del kernel cuando se necesitan hacer pequeñas actualizaciones de bugs o seguridad.
+El extraversion es típicamente utilizado por los distribuidores de los kernels para mantener un registro de sus cambios internos. Es utilizado para manejar múltiples variantes de la misma versión de un kernel.
