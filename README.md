@@ -76,4 +76,5 @@ Para descomprimir el código se utiliza el comando tar, el cual nos ayuda a comp
 ```
 tar xvf linux-5.17.5.tar.xz
 ```
+Captura en terminal del comando: 
 ![Imagen1](5.png)
