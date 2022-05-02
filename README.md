@@ -191,7 +191,7 @@ sudo nano /etc/default/grub
 ```
 Esto abrirá un archivo de configuración de GRUB con el editor de texto por consola nano.
 
-Este archivo debe de contener las primeras tres línesa de esta forma:
+Este archivo debe de contener las primeras tres líneas de esta forma:
 
 ![Imagen1](23.png)
 
