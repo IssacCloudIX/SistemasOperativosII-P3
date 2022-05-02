@@ -37,5 +37,10 @@ Antes de realizar la compilación del kernel es necesaria la instalación de paq
 -libelf-dev
 -bison
 
+Para la instalación de estos paquetes se ocupa el comando:
+
+```sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
+```
+
 ![Imagen1](6.png)
 
