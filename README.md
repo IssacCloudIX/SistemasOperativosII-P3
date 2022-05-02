@@ -54,7 +54,11 @@ Capturas de la instalación de los paquetes:
 
 ## Paso 4. ¿Cómo descargar una versión de kernel desde terminal?
 
-Para realizar este paso se utiliza el comando wget, y se le pasa el link de descarga de la versión de kernal deseada.
+Para realizar este paso se utiliza el comando wget, y se le pasa el link de descarga de la versión de kernal deseada:
+
+```
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.17.5.tar.xz
+```
 
 ![Imagen1](2.png)
 
@@ -66,3 +70,10 @@ Captura de la descarga finalizada:
 
 ![Imagen1](4.png)
 
+## Paso 5. ¿Cómo extraer el código comprimido del kernel desde terminal?
+
+Para descomprimir el código se utiliza el comando tar, el cual nos ayuda a comprimir y descomprimir archivos en linux:
+```
+tar xvf linux-5.17.5.tar.xz
+```
+![Imagen1](5.png)
