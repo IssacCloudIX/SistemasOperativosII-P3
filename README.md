@@ -39,4 +39,3 @@ Antes de realizar la compilación del kernel es necesaria la instalación de paq
 
 ![Imagen1](6.png)
 
-![Imagen1](Fer.png)
