@@ -190,7 +190,8 @@ sudo nano /etc/default/grub
 Esto abrirá un archivo de configuración de GRUB con el editor de texto por consola nano.
 
 Este archivo debe de contener las primeras tres línesa de esta forma:
-*captura*
+
+![Imagen1](23.png)
 
 2. Ejecutar el comando:
 
