@@ -157,5 +157,26 @@ sudo make install
 Captura de la instalación en progreso: 
 ![Imagen1](18.png)
 
-Captura de la instalación finalizada;
-![Imagen1](19.png)
+Al finalizar la instalación no se mostrará ningún mensaje, solo se dejará de actualizar la consola.
+
+## Paso 10 ¿Cómo indicarle a la computadora con cuál kernel debe iniciar?
+
+Para indicarle a Ubuntu que kernel cargar al inicio, se debe de entrar al menu GRUB, el cual nos permite elegir cual sistema operativo cargar.
+Para poder cargar este menu, fue necesario realizar dos cosas antes:
+
+1. Abrir la terminal y en la dirección de home ejecutar el comando: 
+```
+sudo nano /etc/default/grub
+```
+Esto abrirá un archivo de configuración de GRUB con el editor de texto por consola nano.
+
+Este archivo debe de contener las primeras tres línesa de esta forma:
+*captura*
+
+2. Ejecutar el comando:
+
+```
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+![Imagen1](Captura3.PNG)
