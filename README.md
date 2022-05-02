@@ -43,5 +43,14 @@ Para la instalación de estos paquetes se ocupa el comando:
 sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
 ```
 
+Capturas de la instalación de los paquetes:
+
 ![Imagen1](6.png)
 
+![Imagen1](7.png)
+
+## Paso 4. ¿Cómo descargar una versión de kernel desde terminal?
+
+Para realizar este paso se utiliza el comando wget, y se le pasa el link de descarga de la versión de kernal deseada.
+
+![Imagen1](2.png)
