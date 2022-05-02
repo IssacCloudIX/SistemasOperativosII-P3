@@ -125,9 +125,10 @@ El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias ho
 Los siguientes parámetros, en las líneas 10861 y 10868 deben quedar de la siguiente manera:
 
 CONFIG_SYSTEM_REVOCATION_KEYS=""
+
 SYSTEM_REVOCATION_KEYS=""
 
-El SYSTEM_REVOCATION_KEYS igual se puede deshabilitar con el siguiente comando, que se debe ejecutar estando en la carpeta del kernel:
+El SYSTEM_REVOCATION_KEYS también se puede deshabilitar con el siguiente comando, que se debe ejecutar estando en la carpeta del kernel:
 
 ```
 scripts/config --disable SYSTEM_REVOCATION_KEYS
