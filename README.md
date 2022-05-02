@@ -45,6 +45,11 @@ Para la instalación de estos paquetes se ocupa el comando:
 ```
 sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
 ```
+Dependiendo de la versión de kernel que se quiera instalar, será necesario la instalación de otros paquetes. En este caso fue necesaria la instalación adicional de los paquetes:
+-dwarves
+-zstd
+
+![Imagen1](20.png)
 
 Capturas de la instalación de los paquetes:
 
@@ -113,8 +118,21 @@ Al terminar de configurar los parámetros que se deseen, hay que ir a la opción
 
 ## Paso 7 ¿Cómo compilar el código del kernel?
 
-El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. 
-Para realizar la compilación se ejecuta el make estando en la carpeta del kernel:
+El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. Antes de la compilación es necesario modificar el archivo de configuración y cambiar los siguientes parámetros:
+
+![Imagen1](21.png)
+
+Los siguientes parámetros, en las líneas 10861 y 10868 deben quedar de la siguiente manera:
+
+CONFIG_SYSTEM_REVOCATION_KEYS=""
+SYSTEM_REVOCATION_KEYS=""
+
+El SYSTEM_REVOCATION_KEYS igual se puede deshabilitar con el siguiente comando, que se debe ejecutar estando en la carpeta del kernel:
+
+```
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+```
+Después, para realizar la compilación se ejecuta el make estando en la carpeta del kernel:
 
 ```
 make 
