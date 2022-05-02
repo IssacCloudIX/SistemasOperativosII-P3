@@ -49,7 +49,7 @@ Dependiendo de la versión de kernel que se quiera instalar, será necesario la 
 -dwarves
 -zstd
 
-![Imagen1](20.png)
+![Imagen1](21.png)
 
 Capturas de la instalación de los paquetes:
 
@@ -120,7 +120,7 @@ Al terminar de configurar los parámetros que se deseen, hay que ir a la opción
 
 El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. Antes de la compilación es necesario modificar el archivo de configuración y cambiar los siguientes parámetros:
 
-![Imagen1](21.png)
+![Imagen1](20.png)
 
 Los siguientes parámetros, en las líneas 10861 y 10868 deben quedar de la siguiente manera:
 
