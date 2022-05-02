@@ -148,4 +148,14 @@ sudo make modules_install
 
 ## Paso 9 ¿Cómo instalar el kernel?
 
+Por último, se debe instalar el kernel una vez se ha compilado todo.
 
+```
+sudo make install 
+```
+
+Captura de la instalación en progreso: 
+![Imagen1](18.png)
+
+Captura de la instalación finalizada;
+![Imagen1](19.png)
