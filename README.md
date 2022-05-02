@@ -183,4 +183,17 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 Una vez realizado estos dos pasos, se debe reiniciar Ubuntu y apretar la tecla shift mientras se inicia. Esto desplegará el menú GRUB a través del cual podremos seleccionar el kernel deseado para iniciar:
 
-![Imagen1](Final.png)
+![Imagen1](Final.jpg)
+
+
+## Paso 11 ¿Cómo verificar el cambio de kernel a partir de consola?
+
+Para verificar que efectivamente el kernel se cambió a otra versión, podemos utilizar el comando:
+```
+uname -rms
+```
+![Imagen1](19.png)
+
+
+
+
