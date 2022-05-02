@@ -17,27 +17,38 @@ La nomenclatura moderna para la versión del kernal de Linux consiste en:
 major#.minor#[.patchlevel][-ExtraVersion]
 donde patchlevel y extraversion son números opcionales.
 
-El major number es el número principal de la versión.
+El major number es el número principal de la versión, y cada vez que se actualiza trae muchísimos cambios importantes.
 
-El minor number es el número jerárquicamente debajo del número principal, el cual representa cambios hechos a la versión principal actual. 
+El minor number es el número jerárquicamente debajo del número principal, el cual representa cambios hechos a la versión principal actual, y trae consigo cambios significativo al kernel.
 
 El patchlevel, también llamado ABI o revisión, es aplicado a una versión estable del kernel cuando se necesitan hacer pequeñas actualizaciones de bugs o seguridad.
 
 El extraversion es típicamente utilizado por los distribuidores de los kernels para mantener un registro de sus cambios internos. Es utilizado para manejar múltiples variantes de la misma versión de un kernel.
+
+La versión de kernel que instalaremos será la 5.17.5, es decir tiene como major number 5, como minor number 17 y como patchlevel 5.
 
 ## Paso 3 Investigar y enlistar los paquetes requeridos para la compilación y ¿cómo instalarlos desde terminal?.
 
 Antes de realizar la compilación del kernel es necesaria la instalación de paquetes a través de la terminal, estos paquetes son: 
 
 -git
+
 -fakeroot
+
 -build-essential
+
 -ncurses-dev
+
 -xz-utils
+
 -libssl-dev
+
 -bc
+
 -flex
+
 -libelf-dev
+
 -bison
 
 Para la instalación de estos paquetes se ocupa el comando:
@@ -47,6 +58,7 @@ sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-de
 ```
 Dependiendo de la versión de kernel que se quiera instalar, será necesario la instalación de otros paquetes. En este caso fue necesaria la instalación adicional de los paquetes:
 -dwarves
+
 -zstd
 
 ![Imagen1](21.png)
@@ -195,11 +207,12 @@ Este archivo debe de contener las primeras tres líneas de esta forma:
 
 ![Imagen1](23.png)
 
-2. Ejecutar el comando:
+2. Ejecutar el comando: 
 
 ```
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+El cual volverá a generar el archivo de configuración ya actualizado con los cambios realizados.
 
 ![Imagen1](Capture3.PNG)
 
