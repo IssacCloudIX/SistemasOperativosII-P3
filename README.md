@@ -18,8 +18,11 @@ major#.minor#[.patchlevel][-ExtraVersion]
 donde patchlevel y extraversion son números opcionales.
 
 El major number es el número principal de la versión.
+
 El minor number es el número jerárquicamente debajo del número principal, el cual representa cambios hechos a la versión principal actual. 
+
 El patchlevel, también llamado ABI o revisión, es aplicado a una versión estable del kernel cuando se necesitan hacer pequeñas actualizaciones de bugs o seguridad.
+
 El extraversion es típicamente utilizado por los distribuidores de los kernels para mantener un registro de sus cambios internos. Es utilizado para manejar múltiples variantes de la misma versión de un kernel.
 
 ## Paso 3 Investigar y enlistar los paquetes requeridos para la compilación y ¿cómo instalarlos desde terminal?.
@@ -54,3 +57,12 @@ Capturas de la instalación de los paquetes:
 Para realizar este paso se utiliza el comando wget, y se le pasa el link de descarga de la versión de kernal deseada.
 
 ![Imagen1](2.png)
+
+Captura de la descarga del kernel: 
+
+![Imagen1](3.png)
+
+Captura de la descarga finalizada:
+
+![Imagen1](4.png)
+
