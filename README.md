@@ -13,7 +13,7 @@ Captura del respaldo corriendo:
 
 ## Paso 2 Explicar la nomenclatura del kernel.
 
-La nomenclatura moderna para la versión del kernal de Linux consiste en:
+La nomenclatura moderna para la versión del kernel de Linux consiste en:
 major#.minor#[.patchlevel][-ExtraVersion]
 donde patchlevel y extraversion son números opcionales.
 
