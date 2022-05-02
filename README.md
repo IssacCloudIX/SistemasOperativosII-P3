@@ -102,3 +102,28 @@ make menuconfig
 ```
 
 ![Imagen1](10.png)
+
+El make construirá el menú de configuración; al terminar se abrirá la siguiente interfaz la cual sirve para modificar los parámetros del kernel. Hay que tener cuidado pues modificar algo de forma incorrecta puede resultar en una compilación errónea del kernel.
+
+![Imagen1](11.png)
+
+Al terminar de configurar los parámetros que se deseen, hay que ir a la opción de guardar y dejar el mismo nombre que nos indica.
+
+![Imagen1](12.png)
+
+El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. 
+Para realizar la compilación se ejecuta el make estando en la carpeta del kernel:
+
+```
+make 
+```
+Es posible realizar la compilación con paralelismo, utilizando make con el modificador -j y después el número de procesos que queremos que se realicen en paralelo.
+
+```
+make -j 4
+```
+Así el comando va a realizar 4 procesos en paralelo.
+Este número no debe superar el número de núcleos que se tenga en el CPU, pues puede salir contraproducente para la velocidad de la compilación.
+
+
+![Imagen1](13.png)
