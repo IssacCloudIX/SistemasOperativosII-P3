@@ -57,6 +57,7 @@ Para la instalación de estos paquetes se ocupa el comando:
 sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison
 ```
 Dependiendo de la versión de kernel que se quiera instalar, será necesario la instalación de otros paquetes. En este caso fue necesaria la instalación adicional de los paquetes:
+
 -dwarves
 
 -zstd
