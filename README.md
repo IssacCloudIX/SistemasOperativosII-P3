@@ -132,7 +132,11 @@ Al terminar de configurar los parámetros que se deseen, hay que ir a la opción
 
 ## Paso 7 ¿Cómo compilar el código del kernel?
 
-El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. Antes de la compilación es necesario modificar el archivo de configuración y cambiar los siguientes parámetros:
+El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. En caso de no tener espacio suficiente, se puede aumentar el tamaño de la máquina virtual con el siguiente tutorial:
+
+https://ourcodeworld.co/articulos/leer/1434/como-aumentar-el-tamano-del-disco-de-un-disco-asignado-dinamicamente-en-virtualbox
+
+Antes de la compilación es necesario modificar el archivo de configuración y cambiar los siguientes parámetros:
 
 ![Imagen1](20.png)
 
@@ -231,6 +235,12 @@ uname -rms
 ```
 ![Imagen1](19.png)
 
+## Referencias
 
+https://phoenixnap.com/kb/build-linux-kernel
+https://askubuntu.com/questions/1329538/compiling-the-kernel-5-11-11
+https://askubuntu.com/questions/82140/how-can-i-boot-with-an-older-kernel-version
+https://ourcodeworld.co/articulos/leer/1434/como-aumentar-el-tamano-del-disco-de-un-disco-asignado-dinamicamente-en-virtualbox
+https://itsfoss.com/switch-kernels-arch-linux/
 
 
