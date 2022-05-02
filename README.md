@@ -111,6 +111,8 @@ Al terminar de configurar los parámetros que se deseen, hay que ir a la opción
 
 ![Imagen1](12.png)
 
+## Paso 7 ¿Cómo compilar el código del kernel?
+
 El siguiente paso es compilar el kernel, el cual puede llegar a tardar varias horas dependiendo de la velocidad del CPU de la computadora. También es indispensable tener mínimo 40 GB de espacio libre en la máquina virtual. 
 Para realizar la compilación se ejecuta el make estando en la carpeta del kernel:
 
@@ -125,5 +127,25 @@ make -j 4
 Así el comando va a realizar 4 procesos en paralelo.
 Este número no debe superar el número de núcleos que se tenga en el CPU, pues puede salir contraproducente para la velocidad de la compilación.
 
-
 ![Imagen1](13.png)
+
+Captura de la compilación en proceso:
+
+![Imagen1](14.png)
+
+Captura de la compilación terminada.
+
+![Imagen1](16.png)
+
+## Paso 8 ¿Cómo instalar módulos?
+
+El siguiente paso es terminar de compilar e instalar módulos necesarios para la instalación final del kernel con el siguiente comando: 
+
+```
+sudo make modules_install
+```
+![Imagen1](17.png)
+
+## Paso 9 ¿Cómo instalar el kernel?
+
+
